@@ -24,6 +24,16 @@ a {
 
 /* Изменять только нижние стили */
 .container {
+  position: fixed;
+  top: 0;
+  width: calc(100% + 8px);
+  background-color: #ffffff;
+  left: -8px;
+
 }
 .header {
+  display: flex;
+  margin: 20px 60px;
+  align-items: center;
+  gap: 20px;
 }
