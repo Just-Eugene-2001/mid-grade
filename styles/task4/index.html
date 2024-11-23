@@ -25,12 +25,49 @@
     <img src="examplemodal.jpg" alt="Пример модального окна" />
   </div>
 
-  <div class="container">
+  <button class="open-modal-button">Открыть модальное окно</button>
 
+  <div class="container hidden">
+    <div class="modal">
+      <div class="header">
+        <h3 class="title">Подтверждение</h3>
+        <span class="cross-button">&times;</span>
+      </div>
+      <div class="body">
+        <p>Вы хотите сохранить изменения в этом документе перед закрытием?</p>
+        <p class="sub-text">Если вы не сохраните, ваши изменения будут потеряны.</p>
+      </div>
+      <div class="footer">
+        <button class="close-button">Закрыть</button>
+        <button class="apply-button">Сохранить изменения</button>
+      </div>
+    </div>
   </div>
 
   <script>
     // немного покодить тут
+    const openModalButton = document.querySelector('.open-modal-button')
+    const modalContainer = document.querySelector('.container')
+    const closeButtons = document.querySelectorAll('.close-button, .cross-button, .apply-button')
+
+    // Функция для открытия модального окна
+    openModalButton.addEventListener('click', () => {
+      modalContainer.classList.remove('hidden')
+    })
+
+    // Функция для закрытия модального окна
+    closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        modalContainer.classList.add('hidden')
+      })
+    })
+
+    // Закрытие модального окна по клику на затемнение
+    modalContainer.addEventListener('click', (event) => {
+      if (event.target === modalContainer) {
+        modalContainer.classList.add('hidden')
+      }
+    })
   </script>
 
 </body>
