@@ -25,7 +25,8 @@
 Каждая директория содержит отдельное задание. Запускать задания можно через `node`.
 
 1. Задача на понимание event loop [task1](./js/task1/readme.md)
-1. Задача на работу с Promise [task2](./js/task2/readme.md)
+2. Задача на работу с Promise [task2](./js/task2/readme.md)
+3. Задача на работу с API и Map [task3](./js/task3/readme.md)
 
 # TypeScript
 
