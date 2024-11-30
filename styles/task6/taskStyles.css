@@ -1,0 +1,104 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.header {
+    background-color: lightgreen;
+    padding: 40px 60px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header a h1 {
+    margin: 0;
+}
+
+.navigation {
+    border-radius: 40px;
+    background-color: pink;
+    padding: 16px;
+}
+
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.breadcrumbs li+li:before {
+    content: '/';
+    margin-right: 8px
+}
+
+.main {
+    display: grid;
+    grid-template-areas: "grid sidebar" "content sidebar";
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.grid {
+    grid-area: grid;
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    background-color: orange;
+    flex: 1;
+    padding: 20px 40px;
+    border-radius: 40px;
+    color: darkblue;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border-radius: 40px;
+    background-color: yellow;
+    padding: 20px 40px;
+    text-align: center;
+    color: darkblue;
+}
+
+.content {
+    border-radius: 40px;
+    background-color: deepskyblue;
+    color: darkblue;
+    padding: 20px 40px;
+}
