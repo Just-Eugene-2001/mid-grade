@@ -27,6 +27,8 @@
 1. Задача на понимание event loop [task1](./js/task1/readme.md)
 2. Задача на работу с Promise [task2](./js/task2/readme.md)
 3. Задача на работу с API и Map [task3](./js/task3/readme.md)
+4. Задача на замыкания [task4](./js/task4/readme.md)
+5. Задача на контекст [task5](./js/task5/readme.md)
 
 # TypeScript
 
