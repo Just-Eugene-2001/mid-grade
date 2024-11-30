@@ -21,7 +21,11 @@
 
 # JavaScript
 
-в процессе..
+Задачи по JavaScript расположены в директории [./js/](./js/).
+Каждая директория содержит отдельное задание. Запускать задания можно через `node`.
+
+1. Задача на понимание event loop [task1](./js/task1/readme.md)
+1. Задача на работу с Promise [task2](./js/task2/readme.md)
 
 # TypeScript
 
