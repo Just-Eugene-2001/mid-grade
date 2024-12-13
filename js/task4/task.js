@@ -1,5 +1,10 @@
 function getNext() {
   // Редактировать можно только внутреннюю часть этой функции
+  let state = 0;
+
+  return () => {
+    return state++;
+  }
 }
 
 const next = getNext();
