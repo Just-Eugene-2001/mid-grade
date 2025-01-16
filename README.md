@@ -29,6 +29,10 @@
 3. Задача на работу с API и Map [task3](./js/task3/readme.md)
 4. Задача на замыкания [task4](./js/task4/readme.md)
 5. Задача на контекст [task5](./js/task5/readme.md)
+6. Задача на реализацию map с использованием reduce [task6](./js/task6/readme.md)
+7. Задача на оптимизацию обработки массива [task7](./js/task7/readme.md)
+8. Задача на оценку сложности алгоритмов (Big O) [task8](./js/task8/readme.md)
+9. Теоретические вопросы [task9](./js/task9/readme.md)
 
 # TypeScript
 
