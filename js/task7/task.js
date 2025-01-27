@@ -7,9 +7,17 @@ const data = [
 ];
 
 function optimizeProcessing(arr) {
+  const activeItems = []
+  let totalValue = 0
+  arr.map(item => {
+    if (item.active) {
+      activeItems.push(item);
+      totalValue += item.value;
+    }
+  })
   return {
-    activeItems: [],
-    totalValue: null,
+    activeItems,
+    totalValue,
   };
 }
 
